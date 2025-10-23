@@ -99,16 +99,58 @@
     </div>
 
 
-    <div class="contact">
-      <div class="row">
-        <div class="col-6">
-          <p>We pride ourselves on being "best in class" in certain recruitment specialisms.</p>
-          <p>Check out our roles in which we can help page to make sure when you contact us, you are sure to receive a pedigree service.</p>
-          <p>We like to think we are the mutt's nuts, so please do get in touch and let us prove it.</p>
-        </div>
-      </div>
-    </div>
 
+    <footer class="main-footer ">
+      <div class="wrap ">
+        <div class="col ">
+          <a href="/" class="logo" title="Penn Gregory">
+            <img src="./assets/penn_gregory-01.svg" alt="Penn Gregory" title="Penn Gregory" />
+          </a>
+
+            
+        </div>
+        <div class="col">
+          <h5>Discover</h5>
+          <ul>
+            <li>
+              <a href="/services" title="Services">Services</a>
+            </li>
+            <li>
+              <a href="/work" title="Work">Work</a>
+            </li>
+          </ul>
+          
+          <h5 class="mt-24 ">Support</h5>
+          <ul>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="col ">
+          <h5 class="mt-24 ">Legal</h5>
+          <ul>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="tel:+4401174038844">+44 (0) 7738 099 720</a></li>
+            <li><a href="mailto:mail@alfaholics.com">contact@penn-gregory.com</a></li>    
+          </ul>
+          <h5 class="mt-24 ">Location</h5>
+          <p>Flat 14, Bridge Quay <br>138-141 Redcliff Street <br>Bristol <br>BS1 6PQ</p>
+        </div>
+      </div> 
+      
+      <div class="legal">
+        <p>
+          © <script>new Date().getFullYear()</script> Penn Gregory Recruitment Ltd registered in England and Wales. Registered Number: 16799370 
+          <br> 
+          Registered office: 367b Church Road Frampton Cotterell, Bristol, BS36 2AQ
+        </p>
+      </div>
+    </footer>
 
 
     <style>
@@ -329,6 +371,118 @@
         width: 31.3334%;
         flex-basis: 31.3334%
       }
+      footer {
+        overflow: hidden;
+        margin-top: 0;
+        border-top: #C9E1F2 solid 2px;
+        display: block;
+        font-size: .9em
+      }
+
+        footer .wrap {
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 30px 20px;
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap
+        }
+
+        footer .wrap .col {
+          width: 25%;
+          flex-basis: 25%;
+          flex-grow: 0;
+          margin: 20px 0
+        }
+
+        footer .social_media {
+          margin-bottom: 20px
+        }
+
+        footer .social_media ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center
+        }
+
+        footer .social_media li {
+          margin: 0 10px;
+          padding: 0
+        }
+
+        footer .social_media a {
+          display: block;
+          position: relative;
+          width: 24px;
+          height: 24px
+        }
+
+        footer .social_media svg {
+          width: 24px;
+          height: 24px;
+          fill: #c4021a;
+        }
+
+        footer a {
+          text-decoration: none;
+          color: #222
+        }
+
+        footer .mt-24 {
+          margin-top: 24px
+        }
+
+        footer img {
+          width: 140px;
+          height: 200px;
+          fill: #c4021a;
+        }
+
+        footer h5 {
+          font-size: 1.1em;
+          color: #062e4b;
+          font-weight: 500;
+          font-family: Bebas Neue,sans-serif;
+          text-transform: uppercase;
+          margin: 0 0 10px
+        }
+
+        footer p {
+          line-height: 1.6em;
+          margin-bottom: 0
+        }
+
+        footer ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none
+        }
+
+        footer ul li {
+          margin: 6px 0 0;
+          padding: 6px 0 0
+        }
+
+        footer .legal {
+          background-color: #122e49;
+          color: #fff;
+          box-sizing: border-box;
+          display: block;
+          text-align: center;
+          font-family: DM Sans,sans-serif;
+          margin: 0;
+          padding: 20px 15px;
+          line-height: 1.4em
+        }
+
+        footer .legal p {
+          font-size: .85em;
+          margin: 0
+        }
+
       @media (max-width: 1260px) {
         .row,
         .intro .row {
@@ -336,12 +490,20 @@
         }
       }
       @media (max-width: 781px) {
+        .row .col-6,
         .row .col-4 {
           flex-basis: 48%;
+        }
+        footer .wrap .col {
+          flex-basis:50%
+        }
+        footer .wrap .col:first-child,footer .wrap .col:last-child {
+          flex-basis: 100%
         }
       }
       
       @media (max-width: 580px) {
+        .row .col-6,
         .row .col-4 {
           flex-basis: 100%;
           gap: 0;
