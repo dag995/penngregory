@@ -38,6 +38,11 @@ h4 {
   line-height:1em;
   margin:0 0 10px;
 }
+h5 {
+  font-size:2em;
+  line-height:0.8em;
+  margin:0 0 10px;
+}
 .w-200 {
   width: 200px;
 }
@@ -48,6 +53,7 @@ h4 {
   border-radius:50%;
 }
 .intro .row {
+  padding-top:5vh;
   padding-left:6vw;
   padding-right:6vw;
 }
@@ -128,7 +134,7 @@ h4 {
   font-weight: 400;
 }
 .intro p.lrg {
-  font-size:2em;
+  font-size:1.65em;
   padding:0 6vw;
 }
 
@@ -238,6 +244,12 @@ header.main-head.nav-up {
   margin-top:5vh!important;
 }
 
+.mb-5px {
+  margin-bottom:5px;
+}
+.mb-10px {
+  margin-bottom:10px;
+}
 .mt-10px {
   margin-top:10px;
 }
